@@ -1,0 +1,409 @@
+:root {
+    --color: #111111;
+    --seccolor: #1f1f1f;
+    --hover: #c59cff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: var(--seccolor);
+}
+
+/* Navigation bar  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background: var(--color);
+    border-bottom: 5px solid #1f1f1f;
+}
+
+.nav-element a:hover {
+    color: var(--hover);
+}
+
+.logo a {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-element a {
+    color: #f5f4f4;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Main  */
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
+}
+
+.contact h2 {
+    font-size: 40px;
+    color: #ededed;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+form .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.field .item {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #ededed;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin: 12px 0;
+}
+
+.field.error .item {
+    border-color: #d93025;
+}
+
+.input-box .input-field {
+    flex: 1 1 calc(50% - 10px);
+}
+
+.field .item::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.field .error-txt {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 8 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-txt {
+    margin-top: 10px;
+}
+
+form button {
+    padding: 12px 32px;
+    background: #9857f2;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background: #c194ff;
+    color: rgb(64, 59, 65);
+}
+
+/* Footer-section */
+.newsletter-section {
+    background: linear-gradient(90deg, #3a3a3c, #100f1e);
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 6px solid rgba(164, 164, 164, 0.443);
+}
+
+.newsletter-section h1 {
+    color: #f0eaea;
+    font-size: 40px;
+    text-decoration: underline;
+    padding-bottom: 30px;
+}
+
+.newsletter input {
+    height: 40px;
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e7d7fe;
+    color: black;
+}
+
+.newsletter button {
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    background: #9857f2;
+    color: #ededed;
+    font-weight: 700;
+}
+
+.newsletter button:hover {
+    background: #c194ff;
+    color: rgb(64, 59, 65);
+}
+
+.footer {
+    background: linear-gradient(90deg, #3a3a3c, #100f1e);
+    padding: 60px 20px;
+}
+
+.footer .logo {
+    padding: 0 0 40px 60px;
+}
+
+.footer .logo h2 {
+    font-size: 40px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quick-links {
+    margin-left: 100px;
+    text-align: center;
+}
+
+.quick-links p {
+    font-size: 35px;
+    padding-top: 20px;
+    color: rgb(211, 211, 211);
+}
+
+.linkss {
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.linkss a {
+    font-size: 25px;
+    padding: 10px;
+    color: #d9d9d9;
+    text-shadow: #000000;
+    text-decoration: none;
+}
+
+.legal {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.legal h3 {
+    font-size: 35px;
+    color: #d9d9d9;
+    padding-bottom: 20px;
+}
+
+.legal a {
+    font-size: 20px;
+    padding: 0 10px;
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+.contact {
+    padding: 50px;
+    margin-left: 60px;
+}
+
+.contact h3 {
+    color: #d9d9d9;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contact h4 {
+    font-size: 25px;
+    color: #d9d9d9;
+    text-align: center;
+}
+
+.phone-number a {
+    text-decoration: none;
+}
+
+.email {
+    padding-top: 15px;
+}
+
+.email a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, #1c1739, #543e5ebb);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#432e7a, #723e6c);
+}
+
+/* Responsive Styles */
+
+/* Tablets and smaller screens */
+@media screen and (max-width: 768px) {
+    /* Navigation bar adjustments */
+    .navbar {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+
+    .nav-element {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-element a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Main adjustments */
+    .contact-form {
+        padding: 20px;
+    }
+
+    form .input-box {
+        flex-direction: column;
+    }
+
+    .input-box .input-field {
+        width: 100%;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer .logo {
+        padding: 0;
+    }
+
+    .quick-links {
+        margin-left: 0;
+    }
+
+    .legal {
+        margin-right: 0;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    /* Navigation bar adjustments */
+    .navbar {
+        padding: 10px 5px;
+    }
+
+    .nav-element {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-element a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* Main adjustments */
+    .contact-form {
+        padding: 10px;
+    }
+
+    form .input-box {
+        flex-direction: column;
+    }
+
+    .input-box .input-field {
+        width: 100%;
+    }
+
+    .newsletter input {
+        width: 80%;
+    }
+
+    .newsletter button {
+        width: 80px;
+    }
+
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer .logo h2 {
+        font-size: 30px;
+    }
+
+    .quick-links p {
+        font-size: 24px;
+    }
+
+    .legal h3,
+    .contact h3 {
+        font-size: 24px;
+    }
+
+    .contact h4 {
+        font-size: 20px;
+    }
+
+    .copyright p {
+        font-size: 16px;
+    }
+}
